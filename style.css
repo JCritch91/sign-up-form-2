@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 
 * {
     box-sizing: border-box;
@@ -13,7 +20,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -66,7 +73,7 @@ body{
     align-items: flex-end;
     font-size: 1.5rem;
     font-weight:500;
-    height: 35%;
+    height: 37%;
     padding: 0% 20% 10% 5%;
 
 }
@@ -112,13 +119,13 @@ label{
     padding: 5% 0 0 5% ;
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 28%;
     gap: 5%;
 }
 
 button{
     width: 26%;
-    height: 14%;
+    height: 20%;
     background-color: #596D48;
     border-radius: 8px;
     border-color: #596D48;
@@ -136,3 +143,12 @@ input :focus{
     border-color: blue;
 }
 
+.validationText{
+    color: red;
+    font-size: small;
+    font-style: italic;
+}
+
+button:hover{
+    cursor: pointer;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./java.js" defer></script>
 </head>
 <body>
     <div class="mainContainer">
@@ -24,23 +25,23 @@
                 <form action="#" method="post">
                     <div class="input">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" name="firstName">
+                        <input type="text" id="firstName" name="firstName" required placeholder="Dave">
                     </div>
                     <div class="input">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
+                        <input type="text" id="lastName" name="lastName" required placeholder="Smith">
                     </div>
                     <div class="input">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required placeholder="dave.smith@example.com">
                     </div>
                     <div class="input">
                         <label for="number">NUMBER</label>
-                        <input type="number" name="number" id="number" minlength="11">
+                        <input type="number" name="number" id="number" required placeholder="07123456789" minlength="11" maxlength="11">
                     </div>
                     <div class="input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="input">
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
